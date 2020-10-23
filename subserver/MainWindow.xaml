@@ -1,0 +1,19 @@
+﻿<Window x:Class="subserver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:subserver"
+        mc:Ignorable="d"
+        Title="SubServer" Height="450" Width="800" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="757*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="tips" Grid.Column="1" HorizontalAlignment="Left" Height="89" Margin="63,65,0,0" Text="运行此程序，在虚拟机中访问该ip下载该程序到虚拟机并运行" TextWrapping="Wrap" VerticalAlignment="Top" Width="625"/>
+        <Button x:Name="_switch" Content="开始" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="260,330,0,0" VerticalAlignment="Top" Width="200" Click="Switchclick"/>
+        <TextBlock x:Name="iptext" Grid.Column="1" HorizontalAlignment="Left" Height="94" Margin="147,203,0,0" Text="IP :" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" FontWeight="Bold" FontSize="72"/>
+
+    </Grid>
+</Window>
